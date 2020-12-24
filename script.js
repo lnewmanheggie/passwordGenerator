@@ -1,5 +1,6 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
+var resetBtn = document.querySelector("#reset");
 
 
 function randomPass(char, len) {
@@ -53,5 +54,16 @@ function writePassword() {
 
 }
 
+function resetPassword() {
+  var passwordText = document.querySelector("#password");
+  console.log("hi");
+  passwordText.value = "Reset successfully";
+
+}
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+resetBtn.addEventListener("click", resetPassword);
+
+
