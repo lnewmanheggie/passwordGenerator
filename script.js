@@ -56,7 +56,6 @@ function writePassword() {
 // Function to reset password
 function resetPassword() {
   var passwordText = document.querySelector("#password");
-  console.log("hi");
   passwordText.value = "Reset successfully";
 
 }
