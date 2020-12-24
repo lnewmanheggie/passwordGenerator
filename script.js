@@ -2,7 +2,7 @@
 var generateBtn = document.querySelector("#generate");
 var resetBtn = document.querySelector("#reset");
 
-
+// Function to generate a random password based on user specification.
 function randomPass(char, len) {
   var charArray = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ", "abcdefghijklmnopqrstuvwxyz", "1234567890", "!@#$%&*"];
   var passChars = "";
@@ -28,6 +28,7 @@ function randomPass(char, len) {
   return passGenerated;
 }
 
+// ask user for input and use that input to generate a random password.
 function generatePassword() {
   var passLen = parseInt(prompt("How long would you like this password to be? (between 8 and 128 characters"));
   if (passLen < 8 || passLen > 128) {
@@ -42,7 +43,6 @@ function generatePassword() {
       alert("Invalid character type.")
     }
   }
-
 }
 
 // Write password to the #password input
@@ -51,9 +51,9 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
 }
 
+// Function to reset password
 function resetPassword() {
   var passwordText = document.querySelector("#password");
   console.log("hi");
