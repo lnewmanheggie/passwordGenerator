@@ -18,6 +18,10 @@ body {
   background: linear-gradient(90deg, rgba(106,106,106,1) 0%, rgba(241,241,241,1) 50%, rgba(106,106,106,1) 100%);
 }
 
+h2 {
+  text-align: center;
+}
+
 .wrapper {
   padding-top: 30px;
   padding-left: 20px;
@@ -45,11 +49,14 @@ header {
 }
 
 .card-header::after {
-  content: " ";
   display: block;
   width: 100%;
   background: #e7e9eb;
   height: 2px;
+}
+
+form {
+  margin-top: 1.5rem;
 }
 
 .card-body {
@@ -61,7 +68,6 @@ header {
 }
 
 .card-footer::before {
-  content: " ";
   display: block;
   width: 100%;
   background: #e7e9eb;
@@ -135,5 +141,9 @@ button[disabled] {
 @media (max-width: 500px) {
   .btn {
     font-size: 0.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
   }
 }
